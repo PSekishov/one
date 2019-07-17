@@ -44,3 +44,25 @@ add_action('main_menu',function(){
 ]);
 
 });
+
+
+/***** function thumbnails *****/
+
+add_theme_support('post-thumbnails');
+
+add_image_size( 'mysize', 100, 100,true);
+
+
+/***** function widgets *****/
+
+add_action('widgets_init','register_my_widgets');
+
+function register_my_widgets(){
+
+	register_sidebar([
+     'name'=>'Left sidebar',
+     'id'=>'left_sidebar',
+     'descriptions'=>'Левое меню(left sidebar)'
+	]);
+
+}
