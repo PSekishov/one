@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="index">
+<section class="category">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
@@ -11,12 +11,11 @@
                 <?php else: ?>
 				  <h4><?php _e('Записей нет') ?></h4>
 			    <?php endif; ?>
-			
+
 			</div>
 		</div>
 	</div>
 </section>
-
 
 
 <?php get_footer(); ?>

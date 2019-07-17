@@ -60,13 +60,13 @@ add_action('widgets_init','register_my_widgets');
 function register_my_widgets(){
 
 	register_sidebar([
-     'name'=>'Left sidebar',
-     'id'=>'left_sidebar',
-     'descriptions'=>'Левое меню(left sidebar)',
+     'name'          => 'Left sidebar',
+     'id'            => 'left_sidebar',
+     'descriptions'  => 'Левое меню(left sidebar)',
      'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		 'after_widget'  => "</div>\n",
-		 'before_title'  => '<h5 class="widgettitle">',
-		 'after_title'   => "</h5>\n",
+     'after_widget'  => "</div>\n",
+     'before_title'  => '<h5 class="widgettitle">',
+     'after_title'   => "</h5>\n",
 	]);
 
 }
